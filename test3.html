@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAGAMA-2K24</title>
+    <link rel="stylesheet" href="aagama.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var slideDownNav = document.querySelector('.navbar');
+            slideDownNav.classList.add('slide-down-animation');
+            var slideDownDiv = document.querySelector('.half-circle');
+            slideDownDiv.classList.add('slide-down-animation-half-circle');
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            img1.classList.add('slide-left');
+            img2.classList.add('slide-right');
+        });
+
+        function openPopup() {
+            document.getElementById("popup-container").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup-container").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function navigateTo(section) {
+            alert("Navigate to " + section);
+        }</script>
+
+</head>
+
+<body class="AAGAMA-body">
+    <div class="navbar" id="mynav">
+        <div class="responsive">
+            <div class="nav-logo">
+                <a href="#" onclick="navigateTo('home'); loadHome();">
+                    <img src="C:\Users\91739\OneDrive\Desktop\miclogo.png" alt="AAGAMA">
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav>
+            <a href="#" class="fa fa-home"></a>
+            <a href="#">AAGAMA-2K24 Catalogue</a>
+            <a href="mainevents.html">Main Events</a>
+            <a href="#">Department Events</a>
+            <a href="#">Registrations</a>
+        </nav>
+    </div>
+    <div class="extended-scroll">
+        <marquee behavior="" direction="">Registration time for Paper Presentation And Electrical Cross Word !</marquee>
+    </div>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="social-icons">
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-twitter'></i>
+        </div>
+    </div>
+    <main></main>
+    <script>function showPopup() {
+            document.getElementById('socialPopup').style.display = 'block';
+            document.getElementsByTagName('body').style.backDropFilter = "blur(10px)";
+        }
+        function hidePopup() {
+            document.getElementById('socialPopup').style.display = 'none';
+            document.getElementsByTagName('body').style.backDropFilter = 'none';
+        }</script>
+    <script src="AAGAMA.JS"></script>
+    <script>var countDownDate = new Date("Mar 1, 2024 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "";
+            }
+        }, 1000);
+
+        function loadHome() {
+            var slideDownDiv = document.querySelector('.half-circle');
+            slideDownDiv.classList.add('slide-down-animation-half-circle');
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            img1.classList.add('slide-left');
+            img2.classList.add('slide-right');
+        }</script>
+    <script>function toggleDetails(department) {
+            var departmentDetails = document.getElementById(${department}Details);
+            var isActive = departmentDetails.classList.contains('active');
+            var allDetails = document.querySelectorAll('.details');
+            allDetails.forEach(function (details) {
+                details.classList.remove('active');
+            });
+            if (!isActive) {
+                departmentDetails.classList.add('active');
+            }
+            var departmentList = document.querySelector(#${department});
+            departmentList.classList.toggle('open');
+            var arrow = departmentList.querySelector('.arrow');
+            arrow.style.transform = departmentList.classList.contains('open') ? 'translateY(-50%) rotate(180deg)' : 'translateY(-50%)';
+
+        }</script>
+    <header class="home-page">
+        <div class="half-circle">
+            <div class="half-circle-content">
+                <img src="" />
+                <h1 class="AAGAMA">AAGAMA-2K24 </h1>
+                <span id="timer"></span>
+                <button class="button-85" role="button" onclick="navigateTo('main)">Let's Begin</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="catalogue">
+        <img src="" alt="Student Image">
+    </div>
+    <div class="main">
+
+        <section>
+            <div class="wrapper">
+                <svg>
+                    <text x="50%" y="50%" text-anchor="middle">
+                        MAIN EVENTS
+                    </text>
+                </svg>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Paper Presentation</h3>
+                    <h4>Event Descripition</h4>
+                    <p>The Paper Presentation aims to provide a platform to showcase your ideas in front of an esteemed panel of judges.</p>
+                    <h4>More Info</h4>
+                    <button class="open-modal-btn" a href ="mainevents.html" >More Info</button>
+
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h1>Paper Presentation</h1></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Electrical Cross Word</h3>
+                    <h4>Event Desicripition</h4>
+                    <p>This event purpose was to boost up our mind and to make us think little bit more than we usually do.</p>
+                    <h4>More Info</h4>
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Electrical Cross Word</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Blind Circuit</h3>
+                    <h4>Event Desicripition</h4>
+                    <p>Blind circuit is fun-technical event in which the participants were divided into number of teams</p>
+                    <h4>More Info</h4>
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Blind Circuit</h3></center>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Code Crunch</h3>
+                    <h4>Event Desicripition</h4>
+                    <p>In This event we have one round. We will provide a situation or problem and some questions will be given on the problem </p>
+                    <h4>More Info</h4>
+                    <button class="open-modal-btn">More Details</button>
+
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Code Crunch</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <section style="margin-top:-80px">
+            <div class="wrapper">
+                <svg>
+                    <text x="50%" y="50%" text-anchor="middle">
+                    </text>
+                </svg>
+            </div>
+        </section>
+        <div class="container">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Mind Maze Marathon</h3>
+                    <h4>Event Descripition</h4>
+                    <p>The event contains 2 rounds.1st Round contains a MCQ exam for cse allied-branches,a technical exam & other branches have a exam.</p>
+                    <h4>More Info</h4>
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>LAKSHYA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Mind Maze Marathon</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>Prompted Pixels</h3>
+                    <h4>Event desicripition</h4>
+                    <p>The Next Level" is a cutting-edge event that challenges college students to push the boundaries of creativity and technology in image recreation.</p>
+                    <h4>More Info</h4>
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Prompted Pixels</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Innovation Contest</h3>
+                    <h4>Objective</h4>
+                    <p>The objective of the contest is to explore the ideas among the young generation participants may present novels.</p>
+                    <h4>More Info</h4>
+
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Innovation Contest</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Tech Debate</h3>
+                    <h4>Objective</h4>
+                    <p>The objective of this event is to foster critical,thinking,effective,communication skills among participants.</p>
+                    <h4>More info</h4>
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Tech Debate</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="margin-top:-80px">
+            <div class="wrapper">
+                <svg>
+                    <text x="50%" y="50%" text-anchor="middle">
+                    </text>
+                </svg>
+            </div>
+        </section>
+        <div class="container">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Find-Fit-Finish</h3>
+                    <h4>Objective</h4>
+                    <p>To find words from the clues given and fit in the box to finish the task early.</p>
+                    <h4>More info</h4>
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Find-Fit-Finish</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>Bug Hunter</h3>
+                    <h4>Objective</h4>
+                    <p>The objective of the contest is to improve participants' problem-solving & debugging skills.understanding of programming concepts&fix error in code</p>
+                    <h4>More info</h4>
+
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>Bug Hunter</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>CAD</h3>
+                    <h4>Objective</h4>
+                    <p>Computer-aided design(CAD)war is the use of computer to aid in creation,modification,analysis of a design.</p>
+                    <h4>More info</h4>
+
+                    <div class="modal-overlay">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h2>AAGAMA-2K24</h2>
+                                <button class="close-modal-btn">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <center><h3>CAD</h3></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <center><button class="button-85" id="mobile_button" role="button" onclick="navigateTo('dept')">More Events</button></center>
+
+        <div class="dept-container">
+            <section>
+                <div class="wrapper">
+                    <svg>
+                        <text x="50%" y="50%" text-anchor="middle">
+                            Special Events
+                        </text>
+                    </svg>
+                </div>
+            </section>
+
+            <center><button class="button-85" id="mobile_button" role="button" onclick="navigateTo('dept')">Main Events</button></center>
+   
+            <div class="dept-container">
+                <section>
+                    <div class="wrapper">
+                        <svg>
+                            <text x="50%" y="50%" text-anchor="middle">
+                                Department Events
+                            </text>
+                        </svg>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
