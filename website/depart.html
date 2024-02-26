@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAGAMA-2K24</title>
+    <link rel="stylesheet" href="test1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var slideDownNav = document.querySelector('.navbar');
+            slideDownNav.classList.add('slide-down-animation');
+            var slideDownDiv = document.querySelector('.half-circle');
+            slideDownDiv.classList.add('slide-down-animation-half-circle');
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            img1.classList.add('slide-left');
+            img2.classList.add('slide-right');
+        });
+
+        function openPopup() {
+            document.getElementById("popup-container").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup-container").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function navigateTo(section) {
+            alert("Navigate to " + section);
+        }
+    </script>
+
+</head>
+
+<body class="AAGAMA-body">
+    <div class="navbar" id="mynav">
+        <div class="responsive">
+            <div class="nav-logo"><a href="#" onclick="navigateTo('home'); loadHome();">
+                <img src="MLicLogo.jpg" alt="AAGAMA"></a></div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav>
+            <a href="#" onclick="navigateTo('home')"class="fa fa-home"></a>
+            <a href="#" onclick="navigateTo('Catalogues')">AAGAMA-2K24 Catalogue</a>
+            <a href="#" onclick="navigateTo('Main')">Main Events</a>
+            <a href="depart.html" onclick="navigateTo('dept')">Department Events</a>
+            <a href="#" onclick="navigateTo('Register')">Registrations</a>
+            <a href="#" onclick="navigateTo('Venue')">Venue</a>
+            <a onclick="showPopup()">Social-Media</a>
+            </nav>
+    </div>
+    <div class="extended-scroll">
+        <marquee behavior="" direction="">Registration time for Paper Presentation And Electrical Cross Word !</marquee>
+    </div>
+    <div id="socialPopup" class="popup">
+        <span class="close-btn" onclick="hidePopup()">✖</span>
+        <a href="" class="whatsapp" target="_blank">
+            <div class="square">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </a>
+        <!--<a href="https://www.instagram.com/miccollegeoftechnology/" class="instagram" target="_blank">
+            <div class="square">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </a>
+        <a href="https://www.facebook.com/people/DVR-Dr-HS-MIC-College-of-Technology-Autonomous/100067108660296/" class="facebook"
+            target="_blank">
+            <div class="square">
+                <i class="fab fa-facebook"></i>
+            </div>
+        </a>
+        <a href="https://x.com/IicMic?s=09" class="twitter" target="_blank">
+            <div class="square">
+                <i class="fab fa-twitter"></i>
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/school/mic-college-of-technology---india/" class="linkedin" target="_blank">
+            <div class="square">
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </a>
+    </div>-->
+    <div class="container">
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>CIVIL-EVENTS</h2>
+            <h5>Paper Presentation.</h5>
+            <h5>Build And Bridge.</h5>
+            <h5>Techie Talky</h5>
+            <h5>Techno Twister</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+          <div class="container">
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>EEE-EVENTS</h2>
+            <h5>Techie Talky</h5>
+            <h5>Techno Twister</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <span></span>
+          <div class="content">
+          <h2>MECH-EVENTS</h2>
+          <h5>Mr.Designer.</h5>
+          <h5>Chitti On Wheels.</h5>
+          <h5>Techie Talky</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>ECE-EVENTS</h2>
+            <h5>Techie Talky.</h5>
+            <h5>Vikshit With Innovation.</h5>
+            <h5>Circuit Circus.</h5>
+            <h5>Zero Gravity.</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div> 
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>CSE-EVENTS</h2>
+            <h5>Techie Talky.</h5>
+            <h5>Code Zill.</h5>
+            <h5>Find-Fit-Finish.</h5>
+            <h5>Code Crunch.</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      
+          <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>IT-EVENTS</h2>
+            <h5>Techie Talky.</h5>
+            <h5>Code Swap.</h5>
+            <h5>Web Wizards.</h5>
+            <h5>Bus it Out!!</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>AI-EVENTS</h2>
+            <h5>Techie Talky.</h5>
+            <h5>Mind Maze Marathon.</h5>
+            <h5>Prompting Pixels.</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+         <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>BED-EVENTS</h2>
+            <h5>Quiz</h5>
+            <h5>Technician</h5>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+    <main></main>
+    <script>
+        function showPopup() {
+            document.getElementById('socialPopup').style.display = 'block';
+            document.getElementsByTagName('body').style.backDropFilter = "blur(10px)";
+        }
+        function hidePopup() {
+            document.getElementById('socialPopup').style.display = 'none';
+            document.getElementsByTagName('body').style.backDropFilter = 'none';
+        }
+    </script>
+    <script src="AAGAMA.JS"></script>
+    <script>
+ <!--var countDownDate = new Date("Mar 1, 2024 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "";
+            }
+        }, 1000);-->
+
+        function loadHome() {
+            var slideDownDiv = document.querySelector('.half-circle');
+            slideDownDiv.classList.add('slide-down-animation-half-circle');
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            img1.classList.add('slide-left');
+            img2.classList.add('slide-right');
+        }
+    </script>
+    <script>
+        function toggleDetails(department) {
+            var departmentDetails = document.getElementById(`${department}Details`);
+            var isActive = departmentDetails.classList.contains('active');
+            var allDetails = document.querySelectorAll('.details');
+            allDetails.forEach(function (details) {
+                details.classList.remove('active');
+            });
+            if (!isActive) {
+                departmentDetails.classList.add('active');
+            }
+            var departmentList = document.querySelector(`#${department}`);
+            departmentList.classList.toggle('open');
+            var arrow = departmentList.querySelector('.arrow');
+            arrow.style.transform = departmentList.classList.contains('open') ? 'translateY(-50%) rotate(180deg)' : 'translateY(-50%)';
+
+        }
+
+
+    </script>
+    <!--<script>
+        VanillaTilt.init(document.querySelector(".glass-container"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+    </script>-->
+
+
+
+<footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3821.713604750772!2d80.3607401!3d16.691209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35bdfe4c02e0c1%3A0xf59820066fefa912!2sMIC%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1708934589985!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</footer>
+
+</body>
+
+</html>
