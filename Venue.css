@@ -131,10 +131,10 @@ body
   justify-content:space-around;
   align-items:center;
   min-height: 100vh;
-  background: #fff;
+  background: #83cccd;
 }
 .row.college.details{
-  text-decoration-color: #fff;
+  text-decoration-color: #101010;
   text-align: center;
   color:#fff;
 }
