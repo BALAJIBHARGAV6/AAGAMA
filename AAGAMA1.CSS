@@ -1,0 +1,65 @@
+/* Standard styles for larger screens */
+.navbar {
+    background-color: rgb(100, 201, 241);
+    box-shadow: 0 0 10px 0 black;
+    color: rgba(165, 226, 220, 0.203);
+    z-index: 999;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 5px 14px;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    background-color: rgb(203, 230, 233);
+    color: #010101;
+  }
+  
+  /* Mobile styles */
+  @media only screen and (max-width: 600px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: grey;
+      text-align: center;
+    }
+  
+    nav.show {
+      display: flex;
+    }
+  
+    .menu-icon {
+      cursor: pointer;
+      padding: 15px;
+      order: -1; /* Move menu icon to the left */
+    }
+  
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+      z-index: 10;
+    }
+  }
+  

@@ -10,7 +10,6 @@ function toggleMenu() {
     menuIcon.classList.toggle('close');
 }
 
-
 fetchContent('home');
 function navigateTo(page) {
     fetchContent(page);
