@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="AAGAMA.CSS">
+
+<head>
+    <!-- Your existing head content here -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center vertically within the header */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+
+        .menu-toggle {
+            cursor: pointer;
+            font-size: 1.5em;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0; /* Align the menu to the right */
+                width: 100%;
+                background-color: #333;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+        
+    </header>
+</body>
+
+    <!-- The rest of your existing body content here -->
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+  
+        function scrollToSection(sectionId) {
+            toggleMenu();
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+       </script>
+</html>
