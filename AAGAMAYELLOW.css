@@ -625,7 +625,8 @@ a {
 
         nav a:hover {
             background-color: aliceblue;
-            color: #333;
+            color: #000;
+            overflow: hidden;
         }
 
 .responsive {
@@ -916,7 +917,7 @@ a {
     -webkit-user-select: none;
     touch-action: manipulation;
     margin-top: 20px;
-}
+}#333
 
     .button-85:before {
         content: "";
