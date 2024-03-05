@@ -1,20 +1,23 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAGAMA-2K24</title>
-    <link rel="stylesheet" href="vatta.css">
+    <link rel="stylesheet" href="AAGAMAYELLOW.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body {
                 margin: 0;
+                font-family: 'Varela Round', sans-serif;
             }
 
             header {
@@ -61,38 +64,28 @@
             @media screen and (max-width: 768px) {
                 nav ul {
                     display: none;
-                    flex-direction:row;
+                    flex-direction: column;
                     position: absolute;
-                    top: 0px; 
-                    left: 0;
+                    top: 50px; /* Adjust as needed */
+                    right: 0;
                     width: 100%;
                     background-color: #000000;
-                    z-index: 1;
-                    justify-content: center;
-                    align-items: center;
+                    margin: 0px;
                 }
-
-                    nav ul.show {
-                        display:contents;
-                        color: #000000;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    nav ul li {
-                        width: 100%;
-                        text-align: center;
-                        justify-content: center;
-                        align-items: center;
-                        color: #000000;
-                    }
-                    .menu-toggle {
-                        display: block;
-                        cursor: pointer;
-                        font-size: 1.5em;
-                        color: white;
-                        z-index: 1100; 
-                    }
+                nav ul.show {
+                    display: flex;
+                }
+                nav ul li {
+                    width: 100%;
+                    text-align: center;
+                }
+                .menu-toggle {
+                    display: block;
+                    cursor: pointer;
+                    font-size: 1.5em;
+                    color: white;
+                    z-index: 1100; 
+            }
             }
 
 </style>
@@ -257,7 +250,7 @@
                 <span></span>
                 <div class="content">
                     <h2>QUIZ</h2>
-                    <a href="https://drive.google.com/file/d/11zS_z3zlt8tfZnAa1GWLNTZrtSqZ5qTs/view?usp=sharing" target="_blank">Read More</a>
+                    <a href="https://drive.google.com/file/d/1-tw6MXQwwDBSG35WxOlr57F5a0amaZFj/view?usp=drivesdk" target="_blank">Read More</a>
                 </div>
             </div>
         </div>
@@ -357,6 +350,10 @@
         <div class="row">
             <div class="det">
                 <strong>DVR & Dr.HS MIC College of Technology(Autonomous)</strong><br>
+                Approved by AICTE<br>
+                Permanently affiliated to J.N.T.U.K., Kakinada<br>
+                Accredited with NAAC 'A' Grade<br>
+                NBA Accredited B.Tech (CSE, ECE, ME) | An ISO 9001:2015 Certified Institute<br>
                 NH 9, Vijayawada - Hyderabad Hwy, Kanchikacherla, Andhra Pradesh 521180,India<br>
                 Phone number-7382616824<br>
             </div>
@@ -380,26 +377,8 @@
 <!-- Your existing HTML and CSS code -->
 <script>
     function toggleMenu() {
-        const nav = document.querySelector('nav ul');
+        const nav = document.querySelector('.nav ul');
         nav.classList.toggle('show');
-    }
-
-    function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        const nav = document.querySelector('nav ul');
-
-        if (window.innerWidth <= 768) {
-            nav.classList.remove('show');
-        }
-
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-    switch (sectionId) {
-            case 'Home':
-                textOverlay.textContent = 'AAGAMA 2K24';
-                break;
     }
 
     function scrollToSection(sectionId) {
@@ -422,38 +401,9 @@
     }
     function openGoogleForm1() {
       // Replace 'YOUR_GOOGLE_FORM_LINK' with the actual URL of your Google Form
-      var googleFormLink = 'https://drive.google.com/file/d/10lXhrZHV0WuEPIXRvJXZupUiKPcdvkBE/view'; 
+      var googleFormLink = 'https://drive.google.com/file/d/1zWmrm9RwDXxdZMtPC9S-fKqpFCovE2CY/view?usp=drivesdk';
       window.open(googleFormLink, '_blank'); // Open in a new tab
     }
-    document.addEventListener('click', function (event) {
-        const target = event.target;
-        const isNavLink = target.tagName === 'A' && target.closest('nav ul');
-        if (isNavLink) {
-            event.preventDefault();
-            const sectionId = target.getAttribute('href').slice(1);
-            scrollToSection(sectionId);
-        }
-    });
-</script>
-<script>
-    function scrollToHome() {
-        const homeSection = document.getElementById('Home');
-        if (homeSection) {
-            homeSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-    if (performance.navigation.type === 1) {
-        scrollToHome();
-    }
-    document.addEventListener('click', function (event) {
-        const target = event.target;
-        const isNavLink = target.tagName === 'A' && target.closest('nav ul');
-        if (isNavLink) {
-            event.preventDefault();
-            const sectionId = target.getAttribute('href').slice(1);
-            scrollToSection(sectionId);
-        }
-    });
 </script>
 
 <!--<script>
